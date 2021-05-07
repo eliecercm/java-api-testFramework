@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.Deviget'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.3.3'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+}
+
+test {
+    useTestNG()
+}
